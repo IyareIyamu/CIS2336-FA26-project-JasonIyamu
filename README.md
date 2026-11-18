@@ -1,31 +1,54 @@
-# UH Sugar Land Student Center Web App
+# UH Sugar Land Student Center Website
+
+CIS 2336, Fall 2026, Web Project (individual project)
+
+## Developer
+- Name: Jason Iyamu
+- Email: ijiyamu@cougarnet.uh.edu
+
+## Project description
+A website for the new University of Houston Sugar Land student center. Visitors can read about the center, browse the FAQ, and request a study room reservation.
 
 ## Project structure
-
 ```text
-project-folder/
+CIS2336-FA26-project-JasonIyamu/
 ├── frontend/
-│   ├── index.html  (Homepage)
-    ├── FAQ.html
-    ├── roombooking.html
-    ├── reference.html
+│   ├── index.html        (Homepage)
+│   ├── FAQ.html          (FAQ page)
+│   ├── roombooking.html  (Room booking form)
+│   ├── reference.html    (References and AI prompts)
+│   ├── styles.css
 │   └── script.js
 ├── backend/
-│   └── app.js
-├── package.json
+│   └── app.js            (Node.js/Express server, coming in Phase 3)
 └── README.md
 ```
 
-## Below is an example of instruction on how to test/run the app (first-time setup). 
-## You need to update it to reflect how to test/use your app.
+## Front-end features (Phase 2)
+- **Homepage:** Hero section, an embedded YouTube video, and a "Developer Contact" section.
+- **Dynamic navigation menu:** Built with JavaScript from a list of pages in `script.js`, and highlights the current page.
+- **FAQ page:** 5 questions that open and close as collapsibles.
+- **Room booking form:** 5 rooms, with JavaScript validation on every field:
+  - Full name: required, at least 2 characters.
+  - PeopleSoft ID: exactly 7 digits.
+  - Room: must choose one.
+  - Date: required and cannot be in the past.
+  - Error messages appear under each field and clear as the user fixes them.
+- **References page:** Lists the AI prompts used during development.
+- **Responsive design:** Layout adjusts for screens under 600px wide.
 
-In VS code, open a terminal in the project root (the folder containing both `frontend` and `backend`) and run:
+## How to run (front-end only)
+No installation is needed for this phase.
+1. Download or clone the repository.
+2. Open `frontend/index.html` in a web browser.
+3. Use the menu to visit each page.
 
-```bash
-npm init -y
-npm install express path
-node backend/app.js
+Note: The booking form validates in the browser, but submitting it will not work until the Node.js backend is added in Phase 3.
 
-```
-Open http://localhost:8080  in a browser and test the interactive web app.
+## Technologies
+HTML5, CSS3, JavaScript, Node.js and Express (backend, Phase 3)
+
+## Notes
+- The video on the homepage is embedded from YouTube.
+- AI assistance is documented on the References page.
 

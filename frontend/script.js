@@ -1,9 +1,9 @@
 // Dynamic Navigation Menu Generation
 const navigationLinks = [
-    { name: "Home", url: "index.html" },
-    { name: "FAQ", url: "faq.html" },
-    { name: "Room Booking", url: "booking.html" },
-    { name: "References", url: "references.html" }
+        { name: "Home", url: "index.html" },
+    { name: "FAQ", url: "FAQ.html" },
+    { name: "Room Booking", url: "roombooking.html" },
+    { name: "References", url: "reference.html" }
 ];
 
 const navigationContainer = document.getElementById("main-nav");
