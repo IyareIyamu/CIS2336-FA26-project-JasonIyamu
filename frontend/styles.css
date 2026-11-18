@@ -1,0 +1,234 @@
+/* Core Layout Customizations */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header & Dynamic Navigation Layout */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav li {
+    margin: 0;
+}
+
+#main-nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#main-nav a:hover, #main-nav a.active {
+    background-color: #C8102E;
+    color: #ffffff;
+}
+
+/* Content Main Structure Layout */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, #C8102E 0%, #a00d25 100%);
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+/* Multimedia Grid Elements */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Developer Contact Structural Interface */
+.developer-contact {
+    border-left: 5px solid #C8102E;
+}
+
+.developer-contact a {
+    color: #C8102E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.developer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Base Footer UI Elements */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+/* FAQ Accordion Elements */
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-toggle {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333333;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-toggle:hover, .faq-toggle.active {
+    background-color: #e0e0e0;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+}
+
+.faq-content p {
+    padding: 1rem;
+    margin: 0;
+}
+/* Form UI Styling Configuration */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #C8102E;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #C8102E;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #a00d25;
+}
+
+.error-message {
+    color: #C8102E;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.error-message {
+    display: block;
+    color: #b3261e;
+    font-size: 0.9rem;
+    min-height: 1.1em;
+    margin-top: 0.3rem;
+}
+
+.form-group.invalid input,
+.form-group.invalid select {
+    border-color: #b3261e;
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    #main-nav ul {
+        flex-direction: column;
+    }
+
+    #main-nav a {
+        padding: 0.8rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    main {
+        margin: 1rem auto;
+    }
+}
